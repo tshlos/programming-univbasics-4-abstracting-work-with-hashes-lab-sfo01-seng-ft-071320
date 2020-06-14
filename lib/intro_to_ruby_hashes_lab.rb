@@ -1,7 +1,7 @@
 def my_hash_creator(key, value)
   # return a hash that includes the key and value parameters passed into this method
   
-  {key => value}
+  {key: value}
   
 end
 
@@ -9,8 +9,9 @@ end
 def read_from_hash(hash, key)
   # return the correct value using the hash and key parameters
   
-  if key in hash
-    return hash[key]
+  new_hash = hash[key]
+  new_hash
+  
 end
 
 def update_counting_hash(hash, key)
