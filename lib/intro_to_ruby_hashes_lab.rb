@@ -5,6 +5,7 @@ def my_hash_creator(key, value)
 end
 
 
+
 def read_from_hash(hash, key)
   # return the correct value using the hash and key parameters
   
@@ -12,6 +13,8 @@ def read_from_hash(hash, key)
   new_hash
   
 end
+
+
 
 def update_counting_hash(hash, key)
   # given a hash an a key as parameters, return an updated hash
@@ -21,6 +24,8 @@ def update_counting_hash(hash, key)
   update_counting_hash = {
     key: hash
   }
+  update_counting_hash["hash"] += 1 
+  
   if update_counting_hash[:key]
       update_counting_hash[:key] += 1 
     else 
