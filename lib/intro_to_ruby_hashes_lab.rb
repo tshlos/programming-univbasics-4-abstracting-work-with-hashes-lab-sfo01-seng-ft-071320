@@ -20,7 +20,7 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
   
   update_counting_hash = {
-    key: "hash"
+    key: hash
   }
   if update_counting_hash[:key]
       update_counting_hash[:key] += 1 
