@@ -25,10 +25,10 @@ def update_counting_hash(hash, key)
     key: hash
   }
 
-  if update_counting_hash[:key]
-      update_counting_hash[:key] += 1 
+  if update_counting_hash["hash"]
+      update_counting_hash["hash"] += 1 
     else 
-      update_counting_hash[:key] = 1
+      update_counting_hash["hash"] = 1
   end
   update_counting_hash
 end
